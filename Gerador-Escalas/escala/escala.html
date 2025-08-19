@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -16,15 +16,46 @@
 
     <main class="main-container">
         <section class="funcionarios-container">
-            <button class="button-Add" onclick="cadastrar()">Adicionar Funcionário</button>
-            <li>Eduardo</li>
-            <li>Douglas</li>
-            <li>Daniel</li>
-            <li>Fabio</li>
-            <li>Ryan</li>
+            <button class="button-redi" onclick="redirecionar()">Adicionar Funcionário</button>
+            <table cellpadding="5" class="tabela-funcionarios">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cargo</th>
+                        <th>Camisa</th>
+                        <th>Setor</th>
+                        <!-- <th>Turno</th> -->
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="todos-funcionarios">
+
+                </tbody>
+            </table>
         </section>
+
+        <div class="gerador-container">
+
+            <section class="gerarEscala">
+
+                <h2>Gerar escala mensal</h2>
+                <button onclick="abrirPopUp()">Escolher turno</button>
+                <label for="mes">Escolha o mês da escala:</label>
+                <input type="month" id="mes">
+                <button onclick="gerarEscala()">Gerar Escala</button>
+
+                <table id="tabelaEscala">
+                    <thead id="theadEscala"></thead>
+                    <tbody id="tbodyEscala"></tbody>
+                </table>
+
+            </section>
+        </div>
+
+
     </main>
-    <script src="../script/gerar.js"></script>
+    <script src="script/gerar.js"></script>
 
     <!-- <footer class="footerClass">Desenvolvido por Saitema Services &copy</footer> -->
 </body>

@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 2px 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.main-container {
+    display: flex;
+    ;
+}
+
+.header-container {
+    background: linear-gradient(to Right, RED, rgb(253, 113, 19));
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+
+}
+
+.h1-header {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.image-logo {
+    width: 250px;
+
+}
+
+
+.funcionarios-container {
+    margin: 4px 4px;
+    border-radius: 10px;
+    padding: 15px;
+    height: 750px;
+    background-color: rgb(245, 245, 245);
+    font-size: 14px;
+    overflow-y: auto;
+
+
+}
+
+
+.tabela-funcionarios {
+    background-color: rgb(202, 202, 202);
+    padding: 20px;
+    border-collapse: collapse;
+
+
+}
+
+
+.tabela-funcionarios th,
+.tabela-funcionarios td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+.button-redi {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.button-Turnos {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.gerador-container {
+    background-color: rgb(201, 211, 211);
+    width: 100%;
+    height: 79vh;
+    margin-top: 5.5px;
+
+}
+
+.Excluir {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+
+}
+
+.Editar {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.gerarEscala {
+    width: 95%;
+    overflow-x: auto;
+}
+
+#tabelaEscala {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#tabelaEscala th {
+    background: linear-gradient(to bottom, #4CAF50, #2E7D32);
+    color: white;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 0px;
+
+}
+
+#tabelaEscala td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    height: 30px;
+    min-width: 25px;
+    transition: background 0.2s ease;
+    border-radius: 0px;
+}
+
+#tabelaEscala tbody {
+    background-color: #f9f9f9;
+}
+
+#tabelaEscala tbody tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* destacar divisões de semanas */
+#tabelaEscala th[colspan="7"] {
+    background: #388E3C;
+    font-weight: bold;
+    border-right: 3px solid black;
+}
+
+#tabelaEscala td:nth-child(8),
+#tabelaEscala td:nth-child(15),
+#tabelaEscala td:nth-child(22),
+#tabelaEscala td:nth-child(29) {
+    border-right: 3px solid black;
+    /* separa semanas */
+}
+
+.folga-cell {
+    background-color: #ff0000;
+}
+
+/* #tabelaEscala {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+#tabelaEscala th {
+  border: 1px solid #999;
+  padding: 6px;
+}
+
+
+#tabelaEscala thead tr:first-child th {
+  background: linear-gradient(to bottom, #1976d2, #0d47a1);
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+}
+
+
+#tabelaEscala thead tr:nth-child(2) th {
+  background-color: #64b5f6;
+  color: black;
+  font-weight: bold;
+}
+
+
+#tabelaEscala td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  height: 30px;
+  min-width: 25px;
+  transition: background 0.2s ease;
+}
+
+
+#tabelaEscala tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+#tabelaEscala tbody tr:hover {
+  background-color: #e3f2fd;
+}
+
+
+#tabelaEscala td[contenteditable="true"] {
+  cursor: pointer;
+}
+
+#tabelaEscala td[contenteditable="true"]:hover {
+  background-color: #c8e6c9;
+} */
