@@ -154,7 +154,7 @@ body {
     background-color: #e3f2fd;
 }
 
-/* destacar divisões de semanas */
+
 #tabelaEscala th[colspan="7"] {
     background: #388E3C;
     font-weight: bold;
@@ -166,7 +166,7 @@ body {
 #tabelaEscala td:nth-child(22),
 #tabelaEscala td:nth-child(29) {
     border-right: 3px solid black;
-    /* separa semanas */
+  
 }
 
 .folga-cell {
