@@ -2,21 +2,29 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Gerador de Escalas</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Observação: mantenha o caminho acima para o seu CSS atual -->
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header-container">
-        <img src="../imgs/logo.png" alt="logo" class="image-logo">
+        <img src="../imgs/logo.png" alt="Logo" class="image-logo" />
         <h1 class="h1-header">Gerador de Escalas</h1>
     </header>
 
     <main class="main-container">
+        <!-- ============ LISTA DE FUNCIONÁRIOS ============ -->
         <section class="funcionarios-container">
-            <button class="button-redi" onclick="redirecionar()">Adicionar Funcionário</button>
+            <div class="toolbar">
+                <button id="btn-add-func" class="button-redi">
+                    Adicionar Funcionário
+                </button>
+            </div>
+
             <table cellpadding="5" class="tabela-funcionarios">
                 <thead>
                     <tr>
@@ -24,40 +32,42 @@
                         <th>Cargo</th>
                         <th>Camisa</th>
                         <th>Setor</th>
-                        <!-- <th>Turno</th> -->
                         <th>Ações</th>
                     </tr>
                 </thead>
-
                 <tbody id="todos-funcionarios">
-
+                    <!-- Renderizado via employees.controller.js a partir do localStorage -->
                 </tbody>
             </table>
         </section>
 
-        <div class="gerador-container">
-
+        <!-- ============ GERADOR ============ -->
+        <section class="gerador-container">
             <section class="gerarEscala">
-
                 <h2>Gerar escala mensal</h2>
-                <button onclick="abrirPopUp()">Escolher turno</button>
-                <label for="mes">Escolha o mês da escala:</label>
-                <input type="month" id="mes">
-                <button onclick="gerarEscala()">Gerar Escala</button>
+
+                <div class="controls">
+                    <button id="btn-escolher-turno" type="button">
+                        Escolher turno
+                    </button>
+
+                    <label for="mes">Escolha o mês da escala:</label>
+                    <input type="month" id="mes" />
+
+                    <button id="btn-gerar" type="button">Gerar Escala</button>
+                </div>
 
                 <table id="tabelaEscala">
                     <thead id="theadEscala"></thead>
                     <tbody id="funcionarios-escala"></tbody>
                 </table>
-
             </section>
-        </div>
-
-
+        </section>
     </main>
-    <script src="script/gerar.js"></script>
 
-    <!-- <footer class="footerClass">Desenvolvido por Saitema Services &copy</footer> -->
+    <!-- Scripts (ES Modules) -->
+    <!-- Importante: não use onclick inline; toda a lógica está nos controllers -->
+    <script type="module" src="script/main.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+/* NÃO É MAIS UTILIZADO SEPARADOS POR LOGICAS SEPARADAS
+
 // const buttonGerar = document.getElementsByClassName("#button-")
 const buttonRedi = document.getElementsByClassName("button-redi")
 
@@ -24,7 +26,7 @@ funcionarios.forEach((f, index) => {
     <td>${f.cargo}</td>
     <td>${f.camisa}</td>
     <td>${f.setor}</td>
-   
+
     <td>
     <button class="Excluir"> Excluir</button>
     <button class="Editar"> Editar</button>
@@ -148,13 +150,13 @@ function gerarFolgas(funcionarios, ano, mes, diaAll) {
                 semanaFolgas = [];
                 folgouDomingo = false;
 
-        
+
                 if (Math.random() < 0.5) {
                     semanaFolgas.push(0);
                     folgouDomingo = true;
                 }
 
-           
+
                 let qtdFolgasRestantes = folgouDomingo ? 1 : 2;
 
                 while (semanaFolgas.length < (folgouDomingo ? 2 : 2)) {
@@ -210,3 +212,4 @@ function gerarEscala() {
 
 
 
+*/
