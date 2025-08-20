@@ -12,15 +12,15 @@ funcionarios.forEach((f, index) => {
     <td>
         <select id="turno-${index}">
         <option value=""> Selecione o turno</option>
-        <option value="Abertura">Abertura</option>
-        <option value="Inter1"> 08:00h / 17:13h </option>
-        <option value="Inter2"> 08:30h / 17:48h </option>
-        <option value="Inter3"> 09:15h / 19:13h </option>
-        <option value="Inter3"> 10:15h / 20:15h </option>
+        <option value="07:30h/17h ">Abertura</option>
+        <option value=" 08:00h/17:13h" > 08:00h / 17:13h </option>
+        <option value="08:30h/17:48h"> 08:30h / 17:48h </option>
+        <option value="09:15h/19:13h"> 09:15h / 19:13h </option>
+        <option value="10:15h/20:15h"> 10:15h / 20:15h </option>
         <option value="Fechamento">Fechamento</option>
-        <option value="Comercial">(comercial) 08:00h / 17:13h</option>
-        <option value="Comercial2">(comercial) 09:00h / 18:00h</option>
-        <option value="Comercial3">(comercial) 10h / 20h</option>
+        <option value="08:00h/17:13h">(comercial) 08:00h / 17:13h</option>
+        <option value="09:00h/18:00h">(comercial) 09:00h / 18:00h</option>
+        <option value="10h/20h">(comercial) 10h / 20h</option>
         </select>
     </td>   
   
